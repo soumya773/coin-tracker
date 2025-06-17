@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>Coin Tracker</header>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search By Name or Symbol">
+    <button onclick="sortByMarketCap()">Sort By Mkt Cap</button>
+    <button onclick="sortByPercentage()">Sort by percentage</button>
+  </div>
+
+  <table id="cryptoTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Symbol</th>
+        <th>Price</th>
+        <th>Total Volume</th>
+        <th>Percentage</th>
+        <th>Mkr Cap</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+    
+</body>
+
+</html>
